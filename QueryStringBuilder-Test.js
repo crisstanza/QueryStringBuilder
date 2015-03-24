@@ -1,13 +1,12 @@
 function QueryStringBuilderTest() {
 	this.builder = new QueryStringBuilder();
 }
-
-QueryStringBuilderTest.prototype.beforeClass = function() {
-}
-
-QueryStringBuilderTest.prototype.afterClass = function() {
-}
-
+/*
+QueryStringBuilderTest.beforeClass = function() {};
+QueryStringBuilderTest.afterClass = function() {};
+QueryStringBuilderTest.prototype.before = function() {};
+QueryStringBuilderTest.prototype.after = function() {};
+*/
 QueryStringBuilderTest.prototype.testEmpty1 = function() {
 	var expected = '';
 	var current = this.builder.toString();
