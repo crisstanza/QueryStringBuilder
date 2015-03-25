@@ -1,14 +1,14 @@
+/***************************************************************
+ *********** LIBRARY: Query String Builder Vs. 1.0.0 ***********
+ ***************************************************************/
 var QueryStringBuilder = function() {
 	this.params = [];
 }
-
 QueryStringBuilder.EMPTY = '';
 QueryStringBuilder.SEP = '&';
-
 QueryStringBuilder.prototype.add = function(name, value) {
 	this.params.push({ name: name, value: value });
 }
-
 QueryStringBuilder.prototype.toString = function(first) {
 	var buffer = [];
 	var length = this.params.length;
@@ -22,3 +22,5 @@ QueryStringBuilder.prototype.toString = function(first) {
 		return QueryStringBuilder.EMPTY;
 	}
 }
+/***************************************************************
+ ***************************************************************/
